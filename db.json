@@ -1,0 +1,22 @@
+{
+   "products":[
+    {"id":1,"productName":"cover 206","productPrice":"66$","AutoName":"peugeot","image":"../../public/images/_DSC5411.png"},
+    {"id":2,"productName":"cover 405","productPrice":"85$","AutoName":"peugeot","image":"../../public/images/_DSC5412.png"},
+    {"id":3,"productName":"cover 2008","productPrice":"42$","AutoName":"peugeot","image":"../../public/images/_DSC5414.png"},
+    {"id":4,"productName":"cover 504","productPrice":"58$","AutoName":"peugeot","image":"../../public/images/_DSC5415.png"},
+    {"id":1,"productName":"cover Tiba","productPrice":"17$","AutoName":"saipa","image":"../../public/images/8888.png"},
+    {"id":2,"productName":"cover Pride","productPrice":"105$","AutoName":"kia","image":"../../public/images/IMG_20191221_165119.png"},
+    {"id":3,"productName":"cover L90","productPrice":"65$","AutoName":"pashKodro","image":"../../public/images/IMG_20191221_165200.png"},
+    {"id":4,"productName":"cover Samand","productPrice":"87$","AutoName":"irankhodro","image":"../../public/images/IMG_20191221_165340.png"}
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
