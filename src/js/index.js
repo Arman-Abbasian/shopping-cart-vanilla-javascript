@@ -69,11 +69,11 @@ function showingFilteredProducts(){
    return product.productName.toLocaleLowerCase().includes(filters.searchBox);
   });
   let filterdProductsByButtons=filterdProductsBysearchInput.filter(product=>{
-    return product.productName.toLocaleLowerCase().includes(filters.searchBox);
+    return product.AutoName.toLocaleLowerCase().includes(filters.searchButtons.toLowerCase());
    });
-  console.log(filterdProductsBysearchInput);
+  console.log(filterdProductsBysearchInput,filterdProductsByButtons);
   productsSection.innerHTML="";
-  filterdProducts.map(item=>{
+  filterdProductsByButtons.map(item=>{
     let oneCard=`
     <div class="grid grid-cols-2 w-full  gap-x-4 border-2 border-blue-300 rounded-md">
     <div class="bg-blue-500 flex-center p-2">
@@ -118,8 +118,8 @@ const autosFilterButtonsArray=[...autosFilterButtons];
 
 autosFilterButtonsArray.forEach(button => {
   button.addEventListener("click",()=>{
-    filters=button.dataset.id;
-    console.log(filters)
-    showingProducts()
+    filters.searchButtons=button.dataset.id;
+    console.log(filters.searchButtons)
+    showingFilteredProducts()
   })
 });
